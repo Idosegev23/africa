@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.hebrew {
+  font-family: 'Heebo', 'Inter', sans-serif;
+  direction: rtl;
+}
+
+.dual-language {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .dual-language {
+    flex-direction: column;
+    gap: 1rem;
+  }
+} 
